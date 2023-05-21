@@ -23,7 +23,11 @@ int main(void)
 		return 1;
 	}
 
-	// If file exists write the data into it
+	// If file exists and open, write the data into it
+	fprintf(file_pointer, "%s, %s\n", user_name, user_address);
+
+	// Close the file and remove it from the memory
+	fclose(file_pointer);
 
 	return 0;
 }
