@@ -110,6 +110,9 @@ The file write operations can be performed by the functions **fprintf()** and **
 | fputw() | Prints a number to the file. |
 | fwrite() | This functions write the specified amount of bytes to the binary file. |
 
+### Closing a File
+
+The **fclose()** function is used to close the file. After successful file operations, you must always close a file to remove it from the memory.
 
 ### SPECIFICATION
 
