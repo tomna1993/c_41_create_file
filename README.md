@@ -94,6 +94,23 @@ File opening modes or access modes specify the allowed operations on the file to
 
 As given above, if you want to perform operations on a binary file, then you have to append ‘b’ at the last. For example, instead of “w”, you have to use “wb”, instead of “a+” you have to use “a+b”.
 
+### Create a File in C
+
+The **fopen()** function can not only open a file but also can create a file if it does not exist already. For that, we have to use the modes that allow the creation of a file if not found such as **w, w+, wb, wb+, a, a+, ab,** and **ab+**.
+
+### Write to a File
+
+The file write operations can be performed by the functions **fprintf()** and **fputs()** with similarities to read operations. C programming also provides some other functions that can be used to write data to a file such as:
+
+| Function | Description |
+|----------|-------------|
+| fprintf() | Similar to printf(), this function use formatted string and varible arguments list to print output to the file. |
+| fputs() | Prints the whole line in the file and a newline at the end. |
+| fputc() | Prints a single character into the file. |
+| fputw() | Prints a number to the file. |
+| fwrite() | This functions write the specified amount of bytes to the binary file. |
+
+
 ### SPECIFICATION
 
 - The program should accept a single command-line argument. If the program was not run with a single command-line argument, you should print an error message as demonstrated above and `return 1`, ending the program.
