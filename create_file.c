@@ -12,6 +12,18 @@ int main(void)
 	// Check if file exist
 
 	// If the file doesn't exist; create it
+	FILE* file_pointer;
+
+	// Write data into file, if it doesn't exist create it
+	file_pointer = fopen("user_informations.txt", "w+");
+
+	if(file_pointer == NULL)
+	{
+		printf("Error: file doesn't exist and can't be created!\n");
+		return 1;
+	}
 
 	// If file exists write the data into it
+
+	return 0;
 }
