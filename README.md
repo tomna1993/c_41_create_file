@@ -114,17 +114,6 @@ The file write operations can be performed by the functions **fprintf()** and **
 
 The **fclose()** function is used to close the file. After successful file operations, you must always close a file to remove it from the memory.
 
-### SPECIFICATION
-
-- The program should accept a single command-line argument. If the program was not run with a single command-line argument, you should print an error message as demonstrated above and `return 1`, ending the program.
-- If the command-line argument is not a number print an error message, and `return 1`.
-- Convert the command-line argument `string` to `integer` number.
-- Print out the range within the player can guess.
-- The player can have five guesses within he must find the number, otherwise he loses.
-- Help the player if the number he guessed is higher or lower than the generated number.
-- Check if the player inputs correct type of number, if his input contains other types than a number, ask for a new guess.
-- When the player wins print "You win!" with green background, if looses print "Game Over!" with red background.
-
 ## INSTALL LIBRARIES
 
 The source code uses the cs50 library what you can download [HERE](https://github.com/cs50/libcs50).
